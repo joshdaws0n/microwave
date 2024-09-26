@@ -68,6 +68,13 @@
   text-underline-offset: unset;
 }
 
+a {
+  text-decoration-line: underline !important;
+  text-decoration-style: wavy !important;
+  text-underline-offset: 0.3rem !important; 
+  background-color: transparent; 
+}
+
 /* search */
 .search-result:hover {
   text-decoration-line: underline;
