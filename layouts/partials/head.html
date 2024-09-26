@@ -8,7 +8,7 @@
     <meta itemprop="name" content="{{ .Site.Title }}{{ if .Site.Params.tagline }} — {{ .Site.Params.tagline }}{{ end }}" />
     <meta itemprop="description" content="{{ .Site.Params.metaDescription }}" />
     <meta itemprop="image" content="https://micro.blog/{{ .Site.Author.Username }}/podcast.png" />
-    <meta property="og:url" content="{{ absURL }}" />
+    <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ .Site.Title }}{{ if .Site.Params.tagline }} — {{ .Site.Params.tagline }}{{ end }}" />
     <meta property="og:description" content="{{ .Site.Params.metaDescription }}" />
