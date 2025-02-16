@@ -1,3 +1,4 @@
+![Screenshot of the theme](static/img/image.png)
 
 # Microwave Theme for micro.blog
 A card-based theme for your blog.

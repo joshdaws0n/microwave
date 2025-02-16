@@ -1,0 +1,38 @@
+name: Lint Hugo Theme
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install ESLint & HTMLHint
+        run: |
+          npm install -g eslint htmlhint
+
+      - name: Run HTMLHint
+        run: htmlhint layouts/**/*.html
+
+      - name: Run ESLint
+        run: eslint static/js --ext .js
+
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.91.0'
+
+      - name: Check Hugo Theme
+        run: hugo --gc --printI18nWarnings --printUnusedTemplates
