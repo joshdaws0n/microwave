@@ -11,6 +11,5 @@
   "src-not-empty": true,
   "alt-require": true,
   "doctype-html5": true,
-  "id-class-value": "dash",
   "head-script-disabled": false
 }
