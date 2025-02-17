@@ -27,7 +27,7 @@ jobs:
         run: htmlhint --config .htmlhintrc layouts/**/*.html
 
       - name: Run ESLint
-        run: eslint static/js --ext .js
+        run: eslint static/js
 
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v3
