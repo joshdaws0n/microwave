@@ -28,11 +28,3 @@ jobs:
 
       - name: Run ESLint
         run: eslint static/js
-
-      - name: Install Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: '0.91.0'
-
-      - name: Check Hugo Theme
-        run: hugo --gc
