@@ -24,7 +24,7 @@ jobs:
           npm install -g eslint htmlhint
 
       - name: Run HTMLHint
-        run: htmlhint layouts/**/*.html
+        run: htmlhint --config .htmlhintrc layouts/**/*.html
 
       - name: Run ESLint
         run: eslint static/js --ext .js
