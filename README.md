@@ -1,7 +1,13 @@
-![Screenshot of the theme](static/img/image.png)
+![Screenshot of the theme in dark mode](static/img/image_dark.png)
+![Screenshot of the theme in light mode](static/img/image_light.png)
 
 # Microwave Theme for micro.blog
-A card-based theme for your blog.
+A card-based theme for your blog. Check it out at https://joshda.wson.me. Follow me and give me a nudge for assistance:
+
+* @josh_____d on micro.blog
+* @joshda.wson.me on BlueSky
+
+Or you can raise an issue in this repository.
 
 ## Credits
 The theme was heavily inspired by Jimmy Cai's `stack` theme for Hugo that can be found here: https://github.com/CaiJimmy/hugo-theme-stack
@@ -15,6 +21,7 @@ The archive timeline is almost entirely built from this great codepen from Shire
 Mobile hamburger menu comes from Jonathan Suh here: https://github.com/jonsuh/hamburgers
 
 ## Features
+* Automatic light and dark mode that follows the system setting
 * Additional social icons from micro.blog defaults
 * Built-in search
 * Custom tagline
