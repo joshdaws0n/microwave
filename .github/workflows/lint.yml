@@ -35,4 +35,4 @@ jobs:
           hugo-version: '0.91.0'
 
       - name: Check Hugo Theme
-        run: hugo --gc --printUnusedTemplates
+        run: hugo --gc
