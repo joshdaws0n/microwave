@@ -23,12 +23,12 @@
 {{- $list := $filteredPages -}}
 
 <div class="grid" id="photo-grid" style="display: none;">
-	{{- $len := (len $list) -}}
-	{{ range $index, $value := $list }}
+  {{- $len := (len $list) -}}
+  {{ range $index, $value := $list }}
     <div class="grid-item">
       <a href="{{ .Permalink }}">
         {{ range first 1 .Params.photos }}
-				  <img src="{{ . }}" class="photos-grid-item w-100" loading="lazy" />
+          <img src="{{ . }}" alt="{{ .Params.date }}" class="photos-grid-item w-100" loading="lazy" />
 			  {{ end }}
       </a>
     </div>

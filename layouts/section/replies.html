@@ -1,57 +1,57 @@
 {{ define "main" }}
 <div class="home h-feed">
-
   <ul class="post-list pl-0">
-	{{ if .Site.Params.paginateReplies }}
-		{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
-		{{ $list := $paginator.Pages }}
-		{{ range $list  }}
-        <div class="card mb-3">
-            <div class="card-body">
-                {{ if .Title }}
-                    <h1 class="card-title">{{ .Title }}</h1>
-                {{ end }}
+    {{ if .Site.Params.paginateReplies }}
+    {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
+    {{ $list := $paginator.Pages }}
+    {{ range $list }}
+    <div class="card mb-3">
+      <div class="card-body">
+        {{ if .Title }}
+        <h1 class="card-title">{{ .Title }}</h1>
+        {{ end }}
 
-                <div class="post-content">
-                    {{ .Content }}
-                </div>
-                <div>
-                    <a href="{{ .Permalink }}" class="u-url">
-                        <span class="post-meta">
-                            <time class="dt-published" datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-                            <i class="fa-solid fa-arrow-right ml-2"></i>
-                        </span>
-                    </a>
-                </div>
-            </div>
+        <div class="post-content">
+          {{ .Content }}
         </div>
-		{{ end }}
+        <div>
+          <a href="{{ .Permalink }}" class="u-url">
+            <span class="post-meta">
+              <time class="dt-published" datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan
+                2, 2006" }}</time>
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    {{ end }}
     {{ else }}
-		{{ $list := first 25 (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
-		{{ range $list  }}
-        <div class="card mb-5">
-            <div class="card-body">
-                {{ if .Title }}
-                    <h1 class="card-title">{{ .Title }}</h1>
-                {{ end }}
+    {{ $list := first 25 (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
+    {{ range $list }}
+    <div class="card mb-5">
+      <div class="card-body">
+        {{ if .Title }}
+        <h1 class="card-title">{{ .Title }}</h1>
+        {{ end }}
 
-                <div class="post-content">
-                    {{ .Content }}
-                </div>
-                <div>
-                    <a href="{{ .Permalink }}" class="u-url">
-                        <span class="post-meta">
-                            <time class="dt-published" datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-                            <i class="fa-solid fa-arrow-right ml-2"></i>
-                        </span>
-                    </a>
-                </div>
-            </div>
+        <div class="post-content">
+          {{ .Content }}
         </div>
-		{{ end }}
+        <div>
+          <a href="{{ .Permalink }}" class="u-url">
+            <span class="post-meta">
+              <time class="dt-published" datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan
+                2, 2006" }}</time>
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+    {{ end }}
     {{ end }}
   </ul>
-
 </div>
 {{ if .Site.Params.paginateReplies }}
 <div class="pagination justify-content-center p-0 mb-4">
