@@ -3,6 +3,7 @@
   "attr-value-double-quotes": true,
   "doctype-first": false,
   "tag-pair": true,
+  "raw-ignore-regex": "{{.*?}}",
   "tag-self-close": false,
   "id-unique": true,
   "spec-char-escape": false,
