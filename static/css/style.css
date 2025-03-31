@@ -404,3 +404,12 @@ padding-top: 1rem;
 .card-img-album-info {
   align-self: center;
 }
+
+.icon-svg {
+  width: 1.35em; /* Matches fa-xl size */
+  height: 1.35em;
+  fill: currentColor; 
+  vertical-align: middle; 
+  position: relative;
+  top: -0.1em; 
+}

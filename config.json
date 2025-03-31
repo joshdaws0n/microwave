@@ -9,6 +9,7 @@
         "apiKey": "",
         "blueskyUsername": "",
         "threadsUsername": "",
+        "pixelfedLink": "",
         "categoriesOnPosts": true,
         "categoriesInSidebar": true,
         "showCurrentlyReading": true,
