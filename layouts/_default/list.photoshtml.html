@@ -28,7 +28,7 @@
     <div class="grid-item">
       <a href="{{ .Permalink }}">
         {{ range first 1 .Params.photos }}
-          <img src="{{ . }}" alt="{{ .Params.date }}" class="photos-grid-item w-100" loading="lazy" />
+          <img src="{{ . }}" class="photos-grid-item w-100" loading="lazy" />
         {{ end }}
       </a>
     </div>
