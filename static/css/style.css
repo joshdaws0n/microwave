@@ -49,10 +49,28 @@
   }
 }
 
-
-
 .btn-xs {
   padding: 0.05rem 0.35rem !important;
+}
+
+/* custom SVG icon handling */
+.icon-svg {
+  width: 1.35em; 
+  height: 1.35em;
+  fill: currentColor;
+  vertical-align: middle; 
+  position: relative;
+  top: -0.1em; 
+}
+
+.post-meta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-meta-container .u-url {
+  margin-right: auto; /* Pushes the first item to the left */
 }
 
 /* links */
@@ -83,7 +101,6 @@ a {
 
 
 /* timeline */
-
 @mixin tablet-and-up {
   @media screen and (min-width: 769px) {
     @content;
@@ -174,7 +191,6 @@ blockquote p {
 }
 
 /* lightbox */
-
 #lightbox {
   display: none;
   position: fixed;
@@ -242,12 +258,6 @@ blockquote p {
     background-color: rgb(50, 53, 66);
   }
 }
-
-/* .microblog_post:not(:first-child) {
-margin-top: 1rem;
-border-top: 1px solid rgb(0,0,0,0.1);
-padding-top: 1rem;
-} */
 
 .microblog_conversation>*:not(:first-child) {
   margin-top: 1rem;
@@ -329,13 +339,6 @@ padding-top: 1rem;
   object-position: top;
 }
 
-/* @media (max-width: 576px) {
-.album-art {
-  max-width: 70px;
-}
-} */
-
-
 .spinner-overlay {
   position: absolute;
   top: 0;
@@ -403,13 +406,4 @@ padding-top: 1rem;
 
 .card-img-album-info {
   align-self: center;
-}
-
-.icon-svg {
-  width: 1.35em; /* Matches fa-xl size */
-  height: 1.35em;
-  fill: currentColor; 
-  vertical-align: middle; 
-  position: relative;
-  top: -0.1em; 
 }
