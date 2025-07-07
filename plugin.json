@@ -1,5 +1,146 @@
 {
-    "version": "1.16.0",
-    "title": "Microwave Theme",
-    "description": "Card based micro.blog theme"
+  "version": "1.17.0",
+  "title": "Microwave Theme",
+  "description": "Card based micro.blog theme",
+  "fields": [
+    {
+      "field": "params.metaDescription",
+      "label": "Site Description",
+      "type": "text",
+      "placeholder": "A blog running on Micro.blog"
+    },
+    {
+      "field": "params.showTagline",
+      "label": "Show Tagline",
+      "type": "boolean"
+    },
+    {
+      "field": "params.tagline",
+      "label": "Tagline",
+      "type": "text",
+      "placeholder": ""
+    },
+    {
+      "field": "params.paginateReplies",
+      "label": "Paginate Replies",
+      "type": "boolean"
+    },
+    {
+      "field": "params.letterboxdUsername",
+      "label": "Letterboxd Username",
+      "type": "text",
+      "placeholder": ""
+    },
+    {
+      "field": "params.lastfmUsername",
+      "label": "Last.fm Username",
+      "type": "text",
+      "placeholder": ""
+    },
+    {
+      "field": "params.apiKey",
+      "type": "text",
+      "label": "wson.me API Key for Last.fm Integration",
+      "placeholder": "contact me @joshda.wson.me BlueSky for a key"
+    },
+    {
+      "field": "params.blueskyUsername",
+      "label": "Bluesky Username (e.g. @username.bsky.social)",
+      "type": "text",
+      "placeholder": ""
+    },
+    {
+      "field": "params.threadsUsername",
+      "label": "Threads Username (e.g. @username)",
+      "type": "text",
+      "placeholder": ""
+    },
+    {
+      "field": "params.pixelfedLink",
+      "label": "Pixelfed Link (e.g. https://pixelfed.social/@username)",
+      "type": "text",
+      "placeholder": ""
+    },
+    {
+      "field": "params.tumblrUrl",
+      "label": "Tumblr URL (e.g. https://username.tumblr.com)",
+      "type": "text",
+      "placeholder": ""
+    },
+    {
+      "field": "params.mastodonLink",
+      "label": "Mastodon Link (e.g. https://mastodon.social/@username)",
+      "type": "text",
+      "placeholder": ""
+    },
+    {
+      "field": "params.showCrossposts",
+      "label": "Show Crossposts",
+      "type": "boolean"
+    },
+    {
+      "field": "params.showCrosspostsPermalink",
+      "label": "Show Crossposts Permalink Page",
+      "type": "boolean"
+    },
+    {
+      "field": "params.categoriesOnPosts",
+      "label": "Show Categories on Posts",
+      "type": "boolean"
+    },
+    {
+      "field": "params.categoriesInSidebar",
+      "label": "Show Categories in Sidebar",
+      "type": "boolean"
+    },
+    {
+      "field": "params.showCurrentlyReading",
+      "label": "Show Currently Reading",
+      "type": "boolean"
+    },
+    {
+      "field": "params.showReadingTime",
+      "label": "Show Reading Time on Posts",
+      "type": "boolean"
+    },
+    {
+      "field": "params.archivesInSidebar",
+      "label": "Show Archives in Sidebar",
+      "type": "boolean"
+    },
+    {
+      "field": "params.truncatePostsOnIndex",
+      "label": "Truncate Posts on Index Page",
+      "type": "boolean"
+    },
+    {
+      "field": "params.truncatePostsCharLimit",
+      "label": "Truncate Posts Character Limit",
+      "type": "integer",
+      "placeholder": 250
+    },
+    {
+      "field": "params.enableMarquee",
+      "label": "Enable Marquee Content",
+      "type": "boolean"
+    },
+    {
+      "field": "params.marqueeContent",
+      "label": "Marquee Content (HTML allowed)",
+      "type": "text",
+      "placeholder": ""
+    },
+    {
+      "field": "params.categoriesFullImgsHome",
+      "label": "Categories with Full Images on Home Page",
+      "type": "json",
+      "placeholder": "[\"Blog\", \"Photos\"]"
+    },
+    {
+      "field": "params.categoriesIgnorePhotosPage",
+      "label": "Categories to Ignore on Photos Page",
+      "type": "json",
+      "placeholder": "[]"
+    }
+  ]
 }
