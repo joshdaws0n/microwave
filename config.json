@@ -11,6 +11,7 @@
         "threadsUsername": "",
         "pixelfedLink": "",
         "tumblrUrl": "",
+        "mastodonLink": "",
         "showCrossposts": true,
         "showCrosspostsPermalink": true,
         "categoriesOnPosts": true,
