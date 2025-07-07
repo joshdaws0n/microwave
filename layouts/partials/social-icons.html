@@ -1,81 +1,88 @@
-{{ with .Site.Params.blueskyUsername }}
-{{ if ne . "" }}
+{{ with .Site.Params.blueskyUsername }} {{ if ne . "" }}
 <a class="icon-link" href="https://bsky.app/profile/{{ . }}" target="_blank">
-    <i class="fa-brands fa-square-bluesky fa-xl"></i>
+  <i class="fa-brands fa-square-bluesky fa-xl"></i>
 </a>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }} 
 
-{{ with .Site.Params.github_username }}
-{{ if ne . "" }}
+{{ with .Site.Params.github_username }} {{ if ne . "" }}
 <a class="icon-link" href="https://github.com/{{ . }}" target="_blank">
-    <i class="fa-brands fa-square-github fa-xl"></i>
+  <i class="fa-brands fa-square-github fa-xl"></i>
 </a>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }} 
 
-{{ with .Site.Params.instagram_username }}
-{{ if ne . "" }}
+{{ with .Site.Params.instagram_username }} {{ if ne . "" }}
 <a class="icon-link" href="https://instagram.com/{{ . }}" target="_blank">
-    <i class="fa-brands fa-square-instagram fa-xl"></i>
+  <i class="fa-brands fa-square-instagram fa-xl"></i>
 </a>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }} 
 
-{{ with .Site.Params.lastfmUsername }}
-{{ if ne . "" }}
+{{ with .Site.Params.lastfmUsername }} {{ if ne . "" }}
 <a class="icon-link" href="https://last.fm/user/{{ . }}" target="_blank">
-    <i class="fa-brands fa-square-lastfm fa-xl"></i>
+  <i class="fa-brands fa-square-lastfm fa-xl"></i>
 </a>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }} 
 
-{{ with .Site.Params.letterboxdUsername }}
-{{ if ne . "" }}
+{{ with .Site.Params.letterboxdUsername }} {{ if ne . "" }}
 <a class="icon-link" href="https://letterboxd.com/{{ . }}" target="_blank">
-    <i class="fa-brands fa-square-letterboxd fa-xl"></i>
+  <i class="fa-brands fa-square-letterboxd fa-xl"></i>
 </a>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }} 
 
-{{ with .Site.Params.pixelfedLink }}
-{{ if ne . "" }}
+{{ with .Site.Params.pixelfedLink }} {{ if ne . "" }}
 <a class="icon-link" href="{{ . }}" target="_blank">
-    <i class="fa-brands fa-xl">
-        <svg style="margin-top:-0.063rem" xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 24 23" aria-label="Pixelfed">
-            <!-- Rounded rectangle background -->
-            <rect width="23" height="24" rx="4" fill="currentColor" />
-            <!-- Icon path -->
-            <g transform="scale(1.6) translate(-4.75, -4.5)">
-                <path fill="var(--bg-color)" d="M11.21 14.18h1.83c1.73 0 3.13 -1.36 3.13 -3.05c0 -1.68 -1.4 -3.05 -3.13 -3.05h-2.65c-1 0 -1.81 0.79 -1.81 1.76v6.84l2.62 -2.51Z" />
-                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" d="M12 3c4.97 0 9 4.03 9 9c0 4.97 -4.03 9 -9 9c-4.97 0 -9 -4.03 -9 -9c0 -4.97 4.03 -9 9 -9Z" />
-            </g>
-          </svg>
-      </i>
+  <i class="fa-brands fa-xl">
+    <svg
+      style=""
+      xmlns="http://www.w3.org/2000/svg"
+      width="23.5"
+      height="21.6"
+      aria-label="Pixelfed"
+      viewBox="0 0 21 22"
+    >
+      <defs>
+        <mask id="cutout-mask">
+          <!-- White = visible, Black = transparent -->
+          <rect width="24" height="21.6" rx="3" fill="white" />
+          <g transform="scale(1.6) translate(-5, -5)">
+            <path
+              d="M11.21 14.18h1.83c1.73 0 3.13 -1.36 3.13 -3.05c0 -1.68 -1.4 -3.05 -3.13 -3.05h-2.65c-1 0 -1.81 0.79 -1.81 1.76v6.84l2.62 -2.51Z"
+              fill="black"
+            />
+          </g>
+        </mask>
+      </defs>
+      <rect
+        width="21.4"
+        height="24"
+        rx="3"
+        fill="currentColor"
+        mask="url(#cutout-mask)"
+      />
+    </svg>
+  </i>
 </a>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }} 
 
-{{ with .Site.Params.threadsUsername }}
-{{ if ne . "" }}
+{{ with .Site.Params.threadsUsername }} {{ if ne . "" }}
 <a class="icon-link" href="https://threads.net/{{ . }}" target="_blank">
-    <i class="fa-brands fa-square-threads fa-xl"></i>
+  <i class="fa-brands fa-square-threads fa-xl"></i>
 </a>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }} 
 
-{{ with .Site.Params.tumblrUrl }}
-{{ if ne . "" }}
+{{ with .Site.Params.tumblrUrl }} {{ if ne . "" }}
 <a class="icon-link" href="{{ . }}" target="_blank">
-    <i class="fa-brands fa-square-tumblr fa-xl"></i>
+  <i class="fa-brands fa-square-tumblr fa-xl"></i>
 </a>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }} 
 
-{{ with .Site.Params.twitter_username }}
-{{ if ne . "" }}
+{{ with .Site.Params.twitter_username }} {{ if ne . "" }}
 <a class="icon-link" href="https://x.com/{{ . }}" target="_blank">
-    <i class="fa-brands fa-square-x-twitter fa-xl" style="width: 19px;"></i>
+  <i class="fa-brands fa-square-x-twitter fa-xl" style="width: 19px"></i>
 </a>
-{{ end }}
-{{ end }}
+{{ end }} {{ end }} 
+
+{{ with .Site.Params.mastodonLink }} {{ if ne . "" }}
+<a class="icon-link" href="{{ . }}" target="_blank">
+  <i class="fa-brands fa-mastodon fa-xl" style="width: 19px"></i>
+</a>
+{{ end }} {{ end }}
