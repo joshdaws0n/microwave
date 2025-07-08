@@ -1,5 +1,5 @@
 {
-  "version": "1.17.0",
+  "version": "1.17.1",
   "title": "Microwave Theme",
   "description": "Card based micro.blog theme",
   "fields": [
@@ -45,13 +45,13 @@
     },
     {
       "field": "params.blueskyUsername",
-      "label": "Bluesky Username (e.g. @username.bsky.social)",
+      "label": "Bluesky Username (e.g. joshda.wson.me)",
       "type": "text",
       "placeholder": ""
     },
     {
       "field": "params.threadsUsername",
-      "label": "Threads Username (e.g. @username)",
+      "label": "Threads Username (e.g. josh_____d)",
       "type": "text",
       "placeholder": ""
     },
@@ -134,13 +134,13 @@
       "field": "params.categoriesFullImgsHome",
       "label": "Categories with Full Images on Home Page",
       "type": "json",
-      "placeholder": "[\"Blog\", \"Photos\"]"
+      "placeholder": ["Blog", "Photos"]
     },
     {
       "field": "params.categoriesIgnorePhotosPage",
       "label": "Categories to Ignore on Photos Page",
       "type": "json",
-      "placeholder": "[]"
+      "placeholder": []
     }
   ]
 }
