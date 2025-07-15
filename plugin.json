@@ -1,5 +1,5 @@
 {
-  "version": "1.17.1",
+  "version": "1.17.2",
   "title": "Microwave Theme",
   "description": "Card based micro.blog theme",
   "fields": [
@@ -129,18 +129,6 @@
       "label": "Marquee Content (HTML allowed)",
       "type": "text",
       "placeholder": ""
-    },
-    {
-      "field": "params.categoriesFullImgsHome",
-      "label": "Categories with Full Images on Home Page",
-      "type": "json",
-      "placeholder": ["Blog", "Photos"]
-    },
-    {
-      "field": "params.categoriesIgnorePhotosPage",
-      "label": "Categories to Ignore on Photos Page",
-      "type": "json",
-      "placeholder": []
     }
   ]
 }
