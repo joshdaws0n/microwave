@@ -45,14 +45,10 @@
 {{- if .Site.Params.categoriesInSidebar -}}
 {{ if gt (len $list) 0 }}
 <div class="archive_categories mt-4 mb-4">
-  <h1>Categories</h1>
+  <h2>Categories</h2>
   <div class="mb-2 d-flex flex-wrap">
     {{ range $list }}
-    <h1>
-      <a href="{{ .Permalink }}">
-        <span class="badge badge-primary">{{ .Title }}</span>
-      </a>
-    </h1>
+      <a class="btn btn-primary btn-sm no-under font-weight-bold" href="{{ .Permalink }}" role="button">{{ .Title }}</a>
     {{ end }}
   </div>
 </div>
@@ -64,18 +60,18 @@
 {{ $years := slice }}
 
 {{ range $list }}
-    {{ $year := .Date.Format "2006" }}
-    {{ if not (in $years $year) }}
-        {{ $years = $years | append $year }}
-    {{ end }}
+  {{ $year := .Date.Format "2006" }}
+  {{ if not (in $years $year) }}
+      {{ $years = $years | append $year }}
+  {{ end }}
 {{ end }}
 
 <div class="archive_years mb-4">
-  <h1>Archives</h1>
-  <ul class="list-group">
-  {{ range $index, $year := sort $years }}
-    <a href="/archive#{{ $year }}" class="list-group-item list-group-item-action">{{ $year }}</a>
-  {{ end }}
-  </ul>
+  <h2>Archives</h2>
+  <div class="mb-2 d-flex flex-wrap">
+    {{ range $index, $year := sort $years }}
+      <a class="btn btn-primary btn-sm no-under font-weight-bold" href="/archive#{{ $year }}" role="button">{{ $year }}</a>
+    {{ end }}
+  </div>
 </div>
 {{ end }}
