@@ -451,3 +451,11 @@ ul.bookshelf.bookshelf--variant-grid > li {
   aspect-ratio: 4/6 !important;
   object-fit: cover !important;
 }
+
+.bookshelf--variant-list .bookshelf__item {
+  align-items: center;
+}
+
+.bookshelf--variant-list .bookshelf__meta {
+  margin-left: 0.5rem;
+}
