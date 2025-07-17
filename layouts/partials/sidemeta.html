@@ -44,7 +44,7 @@
 
 {{- if .Site.Params.categoriesInSidebar -}}
 {{ if gt (len $list) 0 }}
-<div class="archive_categories mt-4 mb-4">
+<div class="archive_categories mt-4">
   <h2>Categories</h2>
   <div class="mb-2 d-flex flex-wrap">
     {{ range $list }}
@@ -66,7 +66,7 @@
   {{ end }}
 {{ end }}
 
-<div class="archive_years mb-4">
+<div class="archive_years mt-4 mb-4">
   <h2>Archives</h2>
   <div class="mb-2 d-flex flex-wrap">
     {{ range $index, $year := sort $years }}
