@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/joshdaws0n/microwave/main/static/img/logo.svg" alt="Microwave Logo" width="100">
+  <img src="https://raw.githubusercontent.com/joshdaws0n/microwave/main/static/img/microwave-logo.png" alt="Microwave Logo" width="100" style="border-radius:50%">
 </div>
 
 # Microwave Theme for micro.blog
