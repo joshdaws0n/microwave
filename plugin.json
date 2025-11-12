@@ -1,5 +1,5 @@
 {
-  "version": "1.18.3",
+  "version": "1.19.0",
   "title": "Microwave Theme",
   "description": "Card based micro.blog theme",
   "fields": [
@@ -45,33 +45,33 @@
     },
     {
       "field": "params.blueskyUsername",
-      "label": "Bluesky Username (e.g. joshda.wson.me)",
+      "label": "Bluesky Username",
       "type": "text",
-      "placeholder": ""
+      "placeholder": "e.g. joshda.wson.me"
     },
     {
       "field": "params.threadsUsername",
-      "label": "Threads Username (e.g. josh_____d)",
+      "label": "Threads Username",
       "type": "text",
-      "placeholder": ""
+      "placeholder": "e.g. josh_____d"
     },
     {
       "field": "params.pixelfedLink",
-      "label": "Pixelfed Link (e.g. https://pixelfed.social/@username)",
+      "label": "Pixelfed Link",
       "type": "text",
-      "placeholder": ""
+      "placeholder": "e.g. https://pixelfed.social/@username"
     },
     {
       "field": "params.tumblrUrl",
-      "label": "Tumblr URL (e.g. https://username.tumblr.com)",
+      "label": "Tumblr URL",
       "type": "text",
-      "placeholder": ""
+      "placeholder": "e.g. https://username.tumblr.com"
     },
     {
       "field": "params.mastodonLink",
-      "label": "Mastodon Link (e.g. https://mastodon.social/@username)",
+      "label": "Mastodon Link",
       "type": "text",
-      "placeholder": ""
+      "placeholder": "e.g. https://mastodon.social/@username"
     },
     {
       "field": "params.showCrossposts",
