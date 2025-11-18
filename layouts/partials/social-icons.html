@@ -1,87 +1,61 @@
 {{ with .Site.Params.blueskyUsername }} {{ if ne . "" }}
 <a class="icon-link" href="https://bsky.app/profile/{{ . }}" target="_blank">
-  <i class="fa-brands fa-square-bluesky fa-xl"></i>
+  <i class="bi bi-bluesky"></i>
 </a>
 {{ end }} {{ end }} 
 
 {{ with .Site.Params.github_username }} {{ if ne . "" }}
 <a class="icon-link" href="https://github.com/{{ . }}" target="_blank">
-  <i class="fa-brands fa-square-github fa-xl"></i>
+  <i class="bi bi-github"></i>
 </a>
 {{ end }} {{ end }} 
 
 {{ with .Site.Params.instagram_username }} {{ if ne . "" }}
 <a class="icon-link" href="https://instagram.com/{{ . }}" target="_blank">
-  <i class="fa-brands fa-square-instagram fa-xl"></i>
+  <i class="bi bi-instagram"></i>
 </a>
 {{ end }} {{ end }} 
 
 {{ with .Site.Params.lastfmUsername }} {{ if ne . "" }}
 <a class="icon-link" href="https://last.fm/user/{{ . }}" target="_blank">
-  <i class="fa-brands fa-square-lastfm fa-xl"></i>
+  <svg width="1rem" height="1rem" viewBox="0 0 112.195 112.195" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: -0.125em;"><defs><mask id="lastfm-mask"><rect width="112.195" height="112.195" fill="white"/><path d="M80.487,52.141c-6.203-1.849-8.412-2.874-8.412-4.922c0-3.416,4.937-4.702,5.497-4.79 c3.139-0.465,7.072,1.173,8.34,4.99l8.44-2.553c-2.65-8.385-10.487-12.099-18.099-10.975 c-7.788,1.146-12.782,6.786-12.782,13.327c0,8.8,8.244,11.332,14.43,13.181c6.509,1.944,8.401,2.637,8.401,5.023 c0,2.016-1.196,3.895-4.374,4.735c-6.32,1.664-14.586-0.672-16.887-4.523c-1.351-2.261-2.733-5.203-4.001-8.53 c-3.766-9.866-8.926-23.371-23.764-23.371c-7.731,0-21.851,3.743-21.851,24.868c0,8.744,7.481,19.613,21.578,19.613 c11.829,0,13.888-4.32,14.358-5.085l-3.861-7.555c-0.098,0.138-3.692,4.936-10.497,4.936c-11.107,0-12.735-11.776-12.735-11.909 c0-10.967,4.687-16.238,13.008-16.238c8.094,0,11.382,7.04,15.48,17.759c1.397,3.683,2.922,6.966,4.65,9.865 c3.657,6.116,11.55,8.091,19.473,8.091c2.418,0,5.2,0.137,7.351-0.432c7.093-1.878,10.905-6.178,10.905-12.224 C95.137,56.218,86.852,54.044,80.487,52.141z" fill="black"/></mask></defs><path style="fill:currentColor;" d="M112.195,56.097c0,30.983-25.114,56.099-56.097,56.099 C25.115,112.195,0,87.08,0,56.097C0,25.117,25.115,0,56.099,0C87.081,0,112.195,25.117,112.195,56.097z" mask="url(#lastfm-mask)"/></svg>
 </a>
 {{ end }} {{ end }} 
 
 {{ with .Site.Params.letterboxdUsername }} {{ if ne . "" }}
 <a class="icon-link" href="https://letterboxd.com/{{ . }}" target="_blank">
-  <i class="fa-brands fa-square-letterboxd fa-xl"></i>
+  <svg width="1rem" height="1rem" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: -0.125em;"><defs><mask id="letterboxd-mask"><rect width="500" height="500" fill="white"/><g transform="translate(61.000000, 180.000000)"><ellipse cx="189" cy="70" rx="70.0786517" ry="70" fill="black"/><ellipse cx="307.921348" cy="70" rx="70.0786517" ry="70" fill="black"/><ellipse cx="70.0786517" cy="70" rx="70.0786517" ry="70" fill="black"/><path d="M129.539326,107.063108 C122.810493,96.3149291 118.921348,83.611134 118.921348,70 C118.921348,56.388866 122.810493,43.6850709 129.539326,32.9368922 C136.268159,43.6850709 140.157303,56.388866 140.157303,70 C140.157303,83.611134 136.268159,96.3149291 129.539326,107.063108 L129.539326,107.063108 Z" fill="white"/><path d="M248.460674,32.9368922 C255.189507,43.6850709 259.078652,56.388866 259.078652,70 C259.078652,83.611134 255.189507,96.3149291 248.460674,107.063108 C241.731841,96.3149291 237.842697,83.611134 237.842697,70 C237.842697,56.388866 241.731841,43.6850709 248.460674,32.9368922 L248.460674,32.9368922 Z" fill="white"/></g></mask></defs><circle fill="currentColor" cx="250" cy="250" r="250" mask="url(#letterboxd-mask)"/></svg>
 </a>
 {{ end }} {{ end }} 
 
 {{ with .Site.Params.pixelfedLink }} {{ if ne . "" }}
 <a class="icon-link" href="{{ . }}" target="_blank">
   <i class="fa-brands fa-xl">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="23.5"
-      height="21.6"
-      aria-label="Pixelfed"
-      viewBox="0 0 21 22"
-    >
-      <defs>
-        <mask id="cutout-mask">
-          <!-- White = visible, Black = transparent -->
-          <rect width="24" height="21.6" rx="3" fill="white" />
-          <g transform="scale(1.6) translate(-5, -5)">
-            <path
-              d="M11.21 14.18h1.83c1.73 0 3.13 -1.36 3.13 -3.05c0 -1.68 -1.4 -3.05 -3.13 -3.05h-2.65c-1 0 -1.81 0.79 -1.81 1.76v6.84l2.62 -2.51Z"
-              fill="black"
-            />
-          </g>
-        </mask>
-      </defs>
-      <rect
-        width="21.4"
-        height="24"
-        rx="3"
-        fill="currentColor"
-        mask="url(#cutout-mask)"
-      />
-    </svg>
+    <svg width="1rem" height="1rem" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: -0.125em;"><path d="M25 50C11.193 50 0 38.807 0 25S11.193 0 25 0s25 11.193 25 25-11.193 25-25 25zm-1.985-19.542h4.586c4.32 0 7.823-3.41 7.823-7.615 0-4.206-3.502-7.616-7.823-7.616h-6.619c-2.492 0-4.513 1.967-4.513 4.394v17.1l6.546-6.263z" fill-rule="evenodd" fill="currentColor"/></svg>
   </i>
 </a>
 {{ end }} {{ end }} 
 
 {{ with .Site.Params.threadsUsername }} {{ if ne . "" }}
 <a class="icon-link" href="https://threads.net/{{ . }}" target="_blank">
-  <i class="fa-brands fa-square-threads fa-xl"></i>
+  <i class="bi bi-threads"></i>
 </a>
 {{ end }} {{ end }} 
 
 {{ with .Site.Params.tumblrUrl }} {{ if ne . "" }}
 <a class="icon-link" href="{{ . }}" target="_blank">
-  <i class="fa-brands fa-square-tumblr fa-xl"></i>
+  <svg width="1rem" height="1rem" viewBox="-4 0 20 20" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: -0.125em;"><path d="M11.00148,15.975 L12,18.827 C11.622944,19.358 9.91209,19.973 8.376708,19.998 C3.82592,20.073 2.088955,16.895 2.088955,14.657 L2.088955,8 L0,8 L0,5.539 C3.169989,4.445 3.931413,1.708 4.110018,0.149 C4.122552,0.042 4.210288,0 4.261467,0 L7.311341,0 L7.311341,5 L11.489251,5 L11.489251,8 L7.311341,8 L7.311341,14.349 C7.311341,15.195 7.646619,16.363 9.318827,16.32 C9.873444,16.307 10.612934,16.152 11.00148,15.975" fill="currentColor"/></svg>
 </a>
 {{ end }} {{ end }} 
 
 {{ with .Site.Params.twitter_username }} {{ if ne . "" }}
 <a class="icon-link" href="https://x.com/{{ . }}" target="_blank">
-  <i class="fa-brands fa-square-x-twitter fa-xl" style="width: 19px"></i>
+  <i class="bi bi-twitter-x"></i>
 </a>
 {{ end }} {{ end }} 
 
 {{ with .Site.Params.mastodonLink }} {{ if ne . "" }}
 <a class="icon-link" href="{{ . }}" target="_blank">
-  <i class="fa-brands fa-mastodon fa-xl" style="width: 19px"></i>
+  <i class="bi bi-mastodon"></i>
 </a>
 {{ end }} {{ end }}

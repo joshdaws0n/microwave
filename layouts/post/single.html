@@ -6,12 +6,12 @@
     {{ end }}
     <div class="mb-4">
       <p class="post-meta mb-2">
-        <i class="fa-regular fa-calendar fa-lg fa-fw"></i>
+        <i class="bi bi-calendar3"></i>
         <time class="dt-published" datetime="{{ .Date.Format " 2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
       </p>
       {{ if .Site.Params.showReadingTime }}
       <p class="reading-time mb-2">
-        <i class="fa-solid fa-stopwatc fa-lg fa-fw"></i>
+        <i class="bi bi-hourglass-split"></i>
         {{ $readingTime := .ReadingTime }}
 
         {{ if eq $readingTime 1 }}
@@ -23,7 +23,7 @@
       {{ end }}
       <div class="d-flex align-items-center single-categories mb-2">
         <div class="mr-2">
-          <i class="fa fa-tags fa-lg fa-fw"></i>
+          <i class="bi bi-tags"></i>
         </div>
         {{ $baseURL := .Site.BaseURL }}
         <div class="d-flex flex-wrap">
@@ -36,7 +36,7 @@
       {{ if or .Params.bluesky .Params.mastodon .Params.pixelfed .Params.threads .Params.tumblr }}
       <div class="d-flex align-items-center single-categories mb-2">
         <div class="mr-2">
-          <i class="fa-solid fa-share-nodes fa-lg fa-fw"></i>
+          <i class="bi bi-share-fill"></i>
         </div>
         <div class="d-flex flex-wrap">
           {{ if .Params.bluesky }}
