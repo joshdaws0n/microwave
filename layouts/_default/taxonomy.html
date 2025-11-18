@@ -52,31 +52,22 @@
             <div class="px-2 d-flex justify-content-start flex-wrap social-icons">
               {{ if .Params.bluesky }}
                 <a class="icon-link no-under" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }} target="_blank">
-                  <i class="fa-brands fa-square-bluesky fa-lg"></i>
+                  <i class="bi bi-bluesky"></i>
                 </a>
               {{ end }}
               {{ if .Params.pixelfed }}
-              <a class="icon-link no-under" {{ printf "href=%q" (printf "https://%s/p/%s/%s" .Params.pixelfed.hostname .Params.pixelfed.username (string .Params.pixelfed.id)) | safeHTMLAttr }} target="_blank">
-                  <i class="fa-brands">
-                    <svg style="/* margin-top: 0.08rem; */ vertical-align: -.191em;" xmlns="http://www.w3.org/2000/svg" width="17" height="18" aria-label="Pixelfed" viewbox="0 0 17 18">
-                      <rect width="17" height="17.6" rx="3" fill="currentColor"></rect>
-                      <!-- Icon path -->
-                      <g transform="scale(1.3) translate(-5.75, -5.3)">
-                          <path fill="var(--card-bg-color)" d="M11.21 14.18h1.83c1.73 0 3.13 -1.36 3.13 -3.05c0 -1.68 -1.4 -3.05 -3.13 -3.05h-2.65c-1 0 -1.81 0.79 -1.81 1.76v6.84l2.62 -2.51Z" />
-                          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" d="M12 3c4.97 0 9 4.03 9 9c0 4.97 -4.03 9 -9 9c-4.97 0 -9 -4.03 -9 -9c0 -4.97 4.03 -9 9 -9Z" />
-                      </g>
-                    </svg>
-                  </i>
+                <a class="icon-link no-under" {{ printf "href=%q" (printf "https://%s/p/%s/%s" .Params.pixelfed.hostname .Params.pixelfed.username (string .Params.pixelfed.id)) | safeHTMLAttr }} target="_blank">
+                  <svg width="1rem" height="1rem" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: -0.125em;"><path d="M25 50C11.193 50 0 38.807 0 25S11.193 0 25 0s25 11.193 25 25-11.193 25-25 25zm-1.985-19.542h4.586c4.32 0 7.823-3.41 7.823-7.615 0-4.206-3.502-7.616-7.823-7.616h-6.619c-2.492 0-4.513 1.967-4.513 4.394v17.1l6.546-6.263z" fill="currentColor"/></svg>
                 </a>
               {{ end }}
               {{ if .Params.threads }}
                 <a class="icon-link no-under" {{ printf "href=%q" .Params.threads.url | safeHTMLAttr }} target="_blank">
-                  <i class="fa-brands fa-square-threads fa-lg"></i>
+                  <i class="bi bi-threads"></i>
                 </a>
               {{ end }}
               {{ if .Params.tumblr }}
               <a class="icon-link no-under" {{ printf "href=%q" (printf "https://%s/%s" .Params.tumblr.hostname (string .Params.tumblr.id)) | safeHTMLAttr }} target="_blank">
-                <i class="fa-brands fa-square-tumblr fa-lg"></i>
+                <svg width="1rem" height="1rem" viewBox="-4 0 20 20" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: -0.125em;"><path d="M11.00148,15.975 L12,18.827 C11.622944,19.358 9.91209,19.973 8.376708,19.998 C3.82592,20.073 2.088955,16.895 2.088955,14.657 L2.088955,8 L0,8 L0,5.539 C3.169989,4.445 3.931413,1.708 4.110018,0.149 C4.122552,0.042 4.210288,0 4.261467,0 L7.311341,0 L7.311341,5 L11.489251,5 L11.489251,8 L7.311341,8 L7.311341,14.349 C7.311341,15.195 7.646619,16.363 9.318827,16.32 C9.873444,16.307 10.612934,16.152 11.00148,15.975" fill="currentColor"/></svg>
               </a>
               {{ end }}
             </div>
