@@ -59,6 +59,11 @@
             Threads
           </a>
           {{ end }}
+          {{ if .Params.threads }}
+          <a {{ printf "href=%q" .Params.linkedin.url | safeHTMLAttr }} target="_blank" class="btn btn-primary btn-sm btn-xs no-under">
+            LinkedIn
+          </a>
+          {{ end }}
           {{ if .Params.tumblr }}
           <a {{ printf "href=%q" (printf "https://%s/%s" .Params.tumblr.hostname (string .Params.tumblr.id)) | safeHTMLAttr }} target="_blank" class="btn btn-primary btn-sm btn-xs no-under">
             Tumblr

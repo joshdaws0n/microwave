@@ -65,6 +65,11 @@
                   <i class="bi bi-threads"></i>
                 </a>
               {{ end }}
+              {{ if .Params.linkedin }}
+                <a class="icon-link no-under" {{ printf "href=%q" .Params.linkedin.url | safeHTMLAttr }} target="_blank">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              {{ end }}
               {{ if .Params.tumblr }}
               <a class="icon-link no-under" {{ printf "href=%q" (printf "https://%s/%s" .Params.tumblr.hostname (string .Params.tumblr.id)) | safeHTMLAttr }} target="_blank">
                 <svg width="1rem" height="1rem" viewBox="-4 0 20 20" xmlns="http://www.w3.org/2000/svg" style="display: inline-block; vertical-align: -0.125em;"><path d="M11.00148,15.975 L12,18.827 C11.622944,19.358 9.91209,19.973 8.376708,19.998 C3.82592,20.073 2.088955,16.895 2.088955,14.657 L2.088955,8 L0,8 L0,5.539 C3.169989,4.445 3.931413,1.708 4.110018,0.149 C4.122552,0.042 4.210288,0 4.261467,0 L7.311341,0 L7.311341,5 L11.489251,5 L11.489251,8 L7.311341,8 L7.311341,14.349 C7.311341,15.195 7.646619,16.363 9.318827,16.32 C9.873444,16.307 10.612934,16.152 11.00148,15.975" fill="currentColor"/></svg>
