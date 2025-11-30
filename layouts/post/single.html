@@ -33,7 +33,7 @@
         </div>
       </div>
       {{ if .Site.Params.showCrossPostsPermalink }}
-      {{ if or .Params.bluesky .Params.mastodon .Params.pixelfed .Params.threads .Params.tumblr }}
+      {{ if or .Params.bluesky .Params.mastodon .Params.pixelfed .Params.threads .Params.linkedin .Params.tumblr }}
       <div class="d-flex align-items-center single-categories mb-2">
         <div class="mr-2">
           <i class="bi bi-share-fill"></i>
@@ -57,6 +57,11 @@
           {{ if .Params.threads }}
           <a {{ printf "href=%q" .Params.threads.url | safeHTMLAttr }} target="_blank" class="btn btn-primary btn-sm btn-xs no-under">
             Threads
+          </a>
+          {{ end }}
+          {{ if .Params.linkedin }}
+          <a {{ printf "href=https://www.linkedin.com/feed/update/%q" .Params.linkedin.activity | safeHTMLAttr }} target="_blank" class="btn btn-primary btn-sm btn-xs no-under">
+            LinkedIn
           </a>
           {{ end }}
           {{ if .Params.tumblr }}
