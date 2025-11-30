@@ -56,6 +56,12 @@
       "placeholder": "e.g. josh_____d"
     },
     {
+      "field": "params.linkedinUsername",
+      "label": "LinkedIn Username",
+      "type": "text",
+      "placeholder": "e.g. joshdoe"
+    },
+    {
       "field": "params.pixelfedLink",
       "label": "Pixelfed Link",
       "type": "text",
